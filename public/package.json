@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "bulma": "^0.7.2",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-concat": "latest",
+    "gulp-connect": "latest",
+    "gulp-sass": "latest",
+    "gulp-uglify": "^3.0.1",
+    "gulp-util": "latest"
+  },
+  "dependencies": {
+    "animate.css": "^3.7.0",
+    "cookieconsent": "^3.1.0",
+    "enllax": "^1.1.0",
+    "gulp-terser": "^1.1.7",
+    "gulp-uglify-es": "^1.0.4",
+    "gulp-uglifyes": "^0.2.1",
+    "jquery": "^3.3.1",
+    "rellax": "^1.7.2",
+    "swup": "^1.7.19"
+  }
+}

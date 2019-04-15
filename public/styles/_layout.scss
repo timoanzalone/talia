@@ -1,0 +1,92 @@
+.clip-hero {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 65%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 65%, 0% 100%);
+  background-image: url('../img/talia_try3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center center;
+  padding-top: 150px;
+  margin-top: 69px;
+}
+
+.clip-hero h1 {
+  color: $secondary;
+  font-size: 60px;
+}
+
+.clip-hero p {
+  font-size: 20px;
+  color: white;
+  font-weight: 400;
+}
+
+.clip-hero-faq {
+  -webkit-clip-path: polygon(0 19%, 100% 0%, 100% 83%, 0% 100%);
+  clip-path: polygon(0 19%, 100% 0%, 100% 83%, 0% 100%);
+  background-image: url('../img/talia_hero_faq.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  padding-top: 150px;
+  margin-top: 70px;
+}
+
+footer.site-footer {
+  background-color: #302826;
+  color: white;
+  height: 100px;
+  text-align: center;
+  padding: 25px;
+}
+
+footer.site-footer a {
+  color: white;
+}
+
+#wrapper-footer-full {
+  background-color: #302826;
+  color: white;
+  text-align: center;
+}
+
+#wrapper-footer-full a {
+  color: white;
+}
+
+.frame-video {
+  border: 4px solid $primary;
+  object-fit: cover;
+  padding: 10px;
+}
+
+.modal-dialog {
+  max-width: 600px;
+  margin: 25vh auto;
+}
+
+.modal-content {
+  height: 50vh;
+  overflow-y: scroll;
+}
+
+a {
+  text-decoration: underline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body.modal-open {
+  overflow: hidden !important;
+  -moz-overflow: hidden !important;
+}
+
+@media screen and (max-width: 375px) {
+  .clip-hero {
+    height: 70vh;
+    background-position: 55% 5%;
+  }
+}

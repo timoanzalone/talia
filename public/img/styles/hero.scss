@@ -1,0 +1,87 @@
+.hero-home {
+  background-image: url(../img/kimono-kori-savage+short-boxer-wood.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.hero-about {
+  background-image: url(../img/vestito-silvy-crop-yume-red-4.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.hero-collections {
+  background-image: url(../img/kimono-oliva-frida-1.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.hero-contact {
+  background-image: url(../img/reception.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.bg-store {
+  background-image: url(../img/hero-stores.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  perspective: 1px;
+}
+
+.hero.is-primary {
+  background-image: url(../img/cloud-home-hero.png);
+  background-position: left;
+  background-size: 25% center;
+  background-repeat: no-repeat;
+  background-color: white;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.hero-quote {
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 2000px) {
+  .hero-stores {
+    background-size: 60%;
+  }
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .hero-quote {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero.is-primary {
+    background-size: 80%;
+    height: 400px;
+  }
+  .hero-quote {
+    height: auto;
+  }
+
+  .hero-quote .column {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .m-t-xxl {
+    margin-top: 1em;
+  }
+}
