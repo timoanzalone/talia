@@ -4,3 +4,4 @@ public/package.json
 public/gulpfile.js
 public/styles
 public/src
+.DS_Store
