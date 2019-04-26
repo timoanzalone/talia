@@ -60,13 +60,13 @@
         <div class="container">
         <ul id="MobileNavLinks">
           <li>
-            <a href="#about" class="nav-link text-white">About</a>
+            <a href="index.html#about" class="nav-link text-white">About</a>
           </li>
           <li>
-            <a href="#purchase" class="nav-link text-white">Partecipa</a>
+            <a href="index.html#purchase" class="nav-link text-white">Partecipa</a>
           </li>
           <li>
-            <a href="#faq" class="nav-link text-white">Faq</a>
+            <a href="index.html#faq" class="nav-link text-white">Faq</a>
           </li>
           <li>
             <a href="termini.html" class="nav-link text-white">Termini & Condizioni</a>
@@ -138,7 +138,7 @@
                         </div> -->
                   <div id="plan-group">
                     <div class="radio">
-                      <label><input type="radio" class="planRadios" id="2423" name="plan" value="2423" checked> Basic -
+                      <label><input type="radio" class="planRadios" id="2424" name="plan" value="2424" checked> Basic -
                         1&#x20AC;
                         Ogni mese
                       </label>
@@ -160,14 +160,14 @@
               <aside class="cz-field-group form-group mt-4">Tutti i pagamenti vengono elaborati in modo sicuro da <a
                   href="https://stripe.com/it">Stripe</a>.</aside>
             </div>
-            <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-              integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
             <script type="text/javascript" src="https://js.stripe.com/v3/"></script>
-            <script type="text/javascript">
-              var stripePubKey = "pk_live_LihSXqgjiidZiGeLi9F1pBnN00JtjbEX3w";
-            </script>
-            <script type="text/javascript" src="https://manage.campaignzee.com/js/manage/embed-billing.js"></script>
+<script type="text/javascript">
+  var stripePubKey = "pk_live_LihSXqgjiidZiGeLi9F1pBnN00JtjbEX3w";
+</script>
+<script type="text/javascript" src="https://manage.campaignzee.com/js/manage/embed-billing.js"></script>
+<script src="assets/main.js"></script>
             <!-- End Campaignzee Embed Form -->
           </div>
         </div>
@@ -198,8 +198,17 @@
       </div>
 
     </div>
-    <script src="assets/script.js"></script>
-    <script src="assets/main.js"></script>
+<script>
+$(document).ready(function() {
+  $(".navbar-toggler").click(function() {
+      $("#MobileNav").toggleClass("overlay");
+  });
+  $("#MobileNav .nav-link").click(function() {
+    $("#MobileNav").toggleClass("overlay");
+  });
+});
+</script>
+
 </body>
 
 </html>
