@@ -528,9 +528,33 @@
       </div>
 
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
   <script src="assets/script.js"></script>
   <script src="assets/main.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#302826",
+      "text": "#ffffff"
+    },
+    "button": {
+      "background": "#d39f4c",
+      "text": "#ffffff"
+    }
+  },
+  "showLink": false,
+  "theme": "classic",
+  "content": {
+    "message": "Questo sito o gli strumenti terzi da questo utilizzati si avvalgono di cookie necessari al funzionamento ed utili alle finalità illustrate nella cookie policy. Chiudendo questo banner, scorrendo questa pagina, cliccando su un link o proseguendo la navigazione in altra maniera, acconsenti all’uso dei",
+    "dismiss": "Acconsento"
+  }
+})});
+</script>
 </body>
 
 </html>
