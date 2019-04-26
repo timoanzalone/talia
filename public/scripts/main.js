@@ -21,11 +21,11 @@ new WOW().init()
 //   });
 // });
 
-// $(document).ready(function() {
-//   $(".navbar-toggler").click(function() {
-//       $("#MobileNav").toggleClass("overlay");
-//   });
-// });
+$(document).ready(function() {
+  $(".navbar-toggler").click(function() {
+      $("#MobileNav").toggleClass("overlay");
+  });
+});
 
 
 
