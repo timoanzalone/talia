@@ -11,7 +11,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Progetto Talia - Persone per bene orientate al successo.</title>
-  <meta name="description" content="Il Progetto Talia di Matteo Achilli è rivolto a chi vuole crescere come individuo e ottenere un approccio maturo, consapevole e di successo. Persone per bene orientate al successo">
+  <meta name="description"
+    content="Il Progetto Talia di Matteo Achilli è rivolto a chi vuole crescere come individuo e ottenere un approccio maturo, consapevole e di successo. Persone per bene orientate al successo">
   <link rel="icon" type="image/png" href="img/favicon.png ">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/main.css">
@@ -23,41 +24,41 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
+  <div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
 
-      <nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
-  
-        <div class="container">
-  
-          <a class="navbar-brand" rel="home" href="index.html" title="Talia" itemprop="url">
-            <img src="img/logo/talia_logo.svg" alt="">
-          </a>
-  
-          <button class="navbar-toggler" type="button">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-  
-          <div id="navbarNavDropdown" class="collapse navbar-collapse">
-            <ul id="main-menu" class="navbar-nav ml-auto">
-              <li>
-                <a href="index.html#about" class="nav-link">About</a>
-              </li>
-              <li>
-                <a href="index.html#purchase" class="nav-link">Partecipa</a>
-              </li>
-              <li>
-                <a href="index.html#faq" class="nav-link">Faq</a>
-              </li>
-              <li>
-                <a href="termini.html" class="nav-link">Termini & Condizioni</a>
-              </li>
-            </ul>
-          </div>
-        </div><!-- .container -->
-  
-      </nav><!-- .site-navigation -->
-      <div id="MobileNav" class="bg-primary">
-        <div class="container">
+    <nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+
+      <div class="container">
+
+        <a class="navbar-brand" rel="home" href="index.html" title="Talia" itemprop="url">
+          <img src="img/logo/talia_logo.svg" alt="">
+        </a>
+
+        <button class="navbar-toggler" type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="navbarNavDropdown" class="collapse navbar-collapse">
+          <ul id="main-menu" class="navbar-nav ml-auto">
+            <li>
+              <a href="index.html#about" class="nav-link">About</a>
+            </li>
+            <li>
+              <a href="index.html#purchase" class="nav-link">Partecipa</a>
+            </li>
+            <li>
+              <a href="index.html#faq" class="nav-link">Faq</a>
+            </li>
+            <li>
+              <a href="termini.html" class="nav-link">Termini & Condizioni</a>
+            </li>
+          </ul>
+        </div>
+      </div><!-- .container -->
+
+    </nav><!-- .site-navigation -->
+    <div id="MobileNav" class="bg-primary">
+      <div class="container">
         <ul id="MobileNavLinks">
           <li>
             <a href="index.html#about" class="nav-link text-white">About</a>
@@ -73,8 +74,8 @@
           </li>
         </ul>
       </div>
-      </div>
-    </div><!-- #wrapper-navbar end -->
+    </div>
+  </div><!-- #wrapper-navbar end -->
 
   <div class="wrapper" id="page-wrapper">
 
@@ -102,7 +103,9 @@
               }
             </style>
             <h2 class="mt-lg-5">Diventa subito membro di questa community</h2>
-            <p>Fai un investimento su te stesso. Abbonati e ricevi 4 contenuti esclusivi ogni mese. Scopri come ragionano le persone di successo. In più avrai l'opportunità di partecipare ad un incontro all’anno offerto da Matteo Achilli, dove poter rafforzare questa community guardandoci negli occhi.</p>
+            <p>Fai un investimento su te stesso. Abbonati e ricevi 4 contenuti esclusivi ogni mese. Scopri come
+              ragionano le persone di successo. In più avrai l'opportunità di partecipare ad un incontro all’anno
+              offerto da Matteo Achilli, dove poter rafforzare questa community guardandoci negli occhi.</p>
             <div id="cz_embed_signup">
               <form action="https://manage.campaignzee.com/embed/rPCw0JVgUN" method="POST" id="cz_embed_form">
                 <div class="cz-field-group form-group">
@@ -113,12 +116,12 @@
                     required />
                 </div>
                 <div class="cz-field-group form-group">
-                  <label for="FNAME">First Name </label>
-                  <input type="text" class="form-control " id="FNAME" name="merge_fields[FNAME]" />
+                  <label for="FNAME">Nome *</label>
+                  <input type="text" class="form-control required" id="FNAME" name="merge_fields[FNAME]" required />
                 </div>
                 <div class="cz-field-group form-group">
-                  <label for="LNAME">Last Name </label>
-                  <input type="text" class="form-control " id="LNAME" name="merge_fields[LNAME]" />
+                  <label for="LNAME">Cognome *</label>
+                  <input type="text" class="form-control required" id="LNAME" name="merge_fields[LNAME]" required />
                 </div>
                 <div class="cz-field-group form-group">
                   <h4>Il tuo abbonamento</h4>
@@ -151,21 +154,219 @@
                     </div>
                     <div id="card-errors" role="alert"></div>
                   </div>
-                  <input class="btn btn-lg btn-primary text-white" type="submit" class="submit"
-                    value="Abbonati a Talia">
+
+                  <button id="modalbutton" type="button" class="mt-auto btn btn-lg btn-primary text-white d-block mt-3"
+                    data-toggle="modal" data-target="#signupconditions" disabled>Abbonati a talia
+                  </button>
+
+                  <div class="modal fade" id="signupconditions" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+  
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h4 class="pull-left modal-title">Termini, condizioni e privacy</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          </div>
+                          <div class="modal-body">
+                            <p>
+                              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero temporibus harum odit fuga
+                              aspernatur nam ad, assumenda animi dolor nulla, id culpa quod tenetur, amet provident!
+                              Deleniti rem veniam totam.
+                              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic perspiciatis quaerat debitis
+                              incidunt officiis explicabo repudiandae et. Quaerat quidem adipisci fugit quam eveniet
+                              illum, ab at voluptatibus aperiam voluptas placeat!
+                              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos nostrum recusandae facere
+                              neque officiis fugiat exercitationem aliquam asperiores expedita, deleniti dolor excepturi,
+                              a est quisquam minima corporis provident. Ea, tempora.
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptates adipisci eius ea
+                              similique impedit deleniti ab sunt fugit quaerat dicta, facere illo doloribus minus numquam
+                              error fuga pariatur voluptatem.
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus animi delectus ad
+                              molestiae itaque exercitationem tenetur id nesciunt, repellat, possimus consequuntur, aut
+                              mollitia temporibus tempore facere maiores esse error sequi!
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor perferendis quisquam
+                              assumenda corporis! Ratione quaerat, quod similique excepturi officiis illo in repellat
+                              exercitationem sapiente blanditiis! Asperiores veniam debitis aspernatur? Assumenda.
+                            </p>
+                          </div>
+                          <div class="modal-footer">
+                            <hr>
+                            <input id="inputelement" class="btn btn-lg btn-primary text-white submit" type="submit" value="Acconsento" disabled>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
                 </div>
               </form>
+
               <aside class="cz-field-group form-group mt-4">Tutti i pagamenti vengono elaborati in modo sicuro da <a
                   href="https://stripe.com/it">Stripe</a>.</aside>
             </div>
-            <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+              integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
             <script type="text/javascript" src="https://js.stripe.com/v3/"></script>
-<script type="text/javascript">
-  var stripePubKey = "pk_live_LihSXqgjiidZiGeLi9F1pBnN00JtjbEX3w";
-</script>
-<script type="text/javascript" src="https://manage.campaignzee.com/js/manage/embed-billing.js"></script>
-<script src="assets/main.js"></script>
+            <script type="text/javascript">
+              var stripePubKey = "pk_live_LihSXqgjiidZiGeLi9F1pBnN00JtjbEX3w";
+            </script>
+            <script>
+              disableModalButton();
+
+              function checkForErrors(originalMessage, $form) {
+                if ($(document).find('.error:visible').length > 0) {
+                  disableSubmitButton(originalMessage, $form);
+                } else {
+                  enableSubmitButton(originalMessage, $form);
+                }
+              };
+
+
+              function createToken(stripe, card) {
+
+                stripe.createToken(card).then(function (result) {
+                  if (result.error) {
+
+                    // Inform the user if there was an error
+                    var errorElement = document.getElementById('card-errors');
+                    errorElement.textContent = result.error.message;
+
+                    // Problem!
+                    console.log("In response handler");
+                    // Show the errors on the form:
+                    alert('There was a problem subscribing you.');
+                    console.log(result.error);
+                  } else {
+
+                    // Send the token to your server
+                    stripeResponseHandler(result.token, result);
+                  }
+                });
+              };
+
+              function disableSubmitButton(originalMessage, $form) {
+                var $form = $('#cz_embed_form');
+                $form.find('.submit').prop('disabled', true);
+                $form.find('.submit').val('Correggi errori');
+              };
+
+              function enableSubmitButton(originalMessage, $form) {
+                var $form = $('#cz_embed_form');
+                $form.find('.submit').prop('disabled', false);
+                $form.find('.submit').val(originalMessage);
+              };
+
+              function disableModalButton() {
+                $('#modalbutton').prop('disabled', true);
+              };
+
+              function enableModalButton() {
+                $('#modalbutton').prop('disabled', false);
+              };
+
+              function stripeResponseHandler(token, response) {
+                // Grab the form:
+                var $form = $('#cz_embed_form');
+
+                console.log("Stripe call was successful");
+                // Get the token ID:
+
+                console.log(response);
+
+                // Insert the token ID into the form so it gets submitted to the server:
+                var hiddenInput = document.createElement('input');
+                hiddenInput.setAttribute('type', 'hidden');
+                hiddenInput.setAttribute('name', 'stripeToken');
+                hiddenInput.setAttribute('value', token.id);
+                document.getElementById('cz_embed_form').appendChild(hiddenInput);
+
+                // Submit the form:
+                $form.get(0).submit();
+              };
+
+              $(document).ready(function () {
+
+                console.log('embed-billing.js loaded');
+
+                var $form = $('#cz_embed_form');
+
+                var originalMessage = $form.find('.submit').val();
+
+                var stripe;
+
+                if (typeof testKey !== "undefined" && testKey.length > 0) {
+                  stripe = Stripe(testKey);
+                } else if (typeof stripePubKey !== "undefined" && stripePubKey.length > 0) {
+                  stripe = Stripe(stripePubKey);
+                } else {
+                  console.log('There was an error setting the Stripe publishable key.');
+                }
+
+                var elements = stripe.elements();
+                var card = elements.create('card');
+                card.mount('#card-element');
+
+                var $required = $('input,textarea,select').filter('[required]:visible');
+
+                $required.on('focusout', function (event) {
+                  console.log('changed');
+                  event.preventDefault();
+
+                  setTimeout(function () {
+                    checkForErrors(originalMessage, $form);
+                  }, 50);
+                });
+
+                card.addEventListener('change', function (event) {
+                  var displayError = document.getElementById('card-errors');
+
+                  if (event.error) {
+                    displayError.textContent = event.error.message;
+                    disableModalButton();
+                    disableSubmitButton(originalMessage, $form);
+                  } else {
+                    displayError.textContent = '';
+                    enableModalButton();
+                    enableSubmitButton(originalMessage, $form);
+                  }
+                });
+
+                // validation rules
+                $form.validate({
+                  invalidHandler: function (event, validator) {
+                    // 'this' refers to the form
+                    var errors = validator.numberOfInvalids();
+                    if (errors) {
+                      console.log(errors);
+                      // Disable the submit button to prevent repeated clicks:
+                      $form.find('.submit').prop('disabled', true);
+                      $form.find('.submit').val('Correggi Errori');
+                    } else {
+                      // Re-enable button
+                      $form.find('.submit').prop('disabled', false);
+                      $form.find('.submit').val(originalMessage);
+                    }
+
+                  },
+
+                  submitHandler: function (form) {
+                    console.log('Form submitted');
+
+                    $form.find('.submit').val('Subscribing');
+
+                    // Disable the submit button to prevent repeated clicks:
+                    $form.find('.submit').prop('disabled', true);
+                    createToken(stripe, card);
+                  }
+                });
+
+              });
+            </script>
+            <script src="assets/main.js"></script>
+
             <!-- End Campaignzee Embed Form -->
           </div>
         </div>
@@ -174,38 +375,41 @@
 
     </div><!-- #content -->
 
-    
+
 
   </div><!-- #page-wrapper -->
   <div class="wrapper" id="wrapper-footer-full">
 
-      <div class="container" id="footer-full-content" tabindex="-1">
+    <div class="container" id="footer-full-content" tabindex="-1">
 
-        <div class="row">
+      <div class="row">
 
-          <div id="text-3" class="footer-widget widget_text widget-count-1 col-md-12">
-            <div class="textwidget">
-              <div class="site-info">
-                <p>Copyright © Egomnia S.r.l. Via degli Olmetti 5/b, 00060 Formello (RM) – 2019 All Rights Reserved. <a
-                  href="termini.html">Termini e Condizioni d’uso</a> – <a href="privacy.html">Privacy</a> - <a href="cookies.html">Cookies</a></p>
-              </div>
+        <div id="text-3" class="footer-widget widget_text widget-count-1 col-md-12">
+          <div class="textwidget">
+            <div class="site-info">
+              <p>Copyright © Egomnia S.r.l. Via degli Olmetti 5/b, 00060 Formello (RM) – 2019 All Rights Reserved. <a
+                  href="termini.html">Termini e Condizioni d’uso</a> – <a href="privacy.html">Privacy</a> - <a
+                  href="cookies.html">Cookies</a></p>
             </div>
-          </div><!-- .footer-widget -->
-        </div>
-
+          </div>
+        </div><!-- .footer-widget -->
       </div>
 
     </div>
-<script>
-$(document).ready(function() {
-  $(".navbar-toggler").click(function() {
-      $("#MobileNav").toggleClass("overlay");
-  });
-  $("#MobileNav .nav-link").click(function() {
-    $("#MobileNav").toggleClass("overlay");
-  });
-});
-</script>
+
+  </div>
+  <script>
+    $(document).ready(function () {
+      $(".navbar-toggler").click(function () {
+        $("#MobileNav").toggleClass("overlay");
+      });
+      $("#MobileNav .nav-link").click(function () {
+        $("#MobileNav").toggleClass("overlay");
+      });
+
+
+    });
+  </script>
 
 </body>
 
