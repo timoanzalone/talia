@@ -123,6 +123,11 @@
                   <label for="LNAME">Cognome *</label>
                   <input type="text" class="form-control required" id="LNAME" name="merge_fields[LNAME]" required />
                 </div>
+                <div class="cz-field-group form-check">
+                    <input class="form-check-input" type="checkbox" name="TERMS" value="" id="TERMS" required>
+                  <label class="form-check-label" for="TERMS">Acconsento ai <a href="#">termini e condizioni</a> e <a href="#">privacy policy</a>.</label> 
+                </div>
+
                 <div class="cz-field-group form-group">
                   <h4>Il tuo abbonamento</h4>
                   <!-- <button id="open_coupon_btn" class="btn btn-link" style="font-size:11px; float:right; padding-top:10px; padding-right:2px;">Have a coupon?</button>
@@ -155,53 +160,53 @@
                     <div id="card-errors" role="alert"></div>
                   </div>
 
-                  <button id="modalbutton" type="button" class="mt-auto btn btn-lg btn-primary text-white d-block mt-3"
+                  <!-- <button id="modalbutton" type="button" class="mt-auto btn btn-lg btn-primary text-white d-block mt-3"
                     data-toggle="modal" data-target="#signupconditions" disabled>Abbonati a talia
-                  </button>
+                  </button> -->
 
-                  <div class="modal fade" id="signupconditions" tabindex="-1" role="dialog" aria-hidden="true">
-                      <div class="modal-dialog" role="document">
-  
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h4 class="pull-left modal-title">Termini, condizioni e privacy</h4>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                          </div>
-                          <div class="modal-body">
-                            <p>
-                              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero temporibus harum odit fuga
-                              aspernatur nam ad, assumenda animi dolor nulla, id culpa quod tenetur, amet provident!
-                              Deleniti rem veniam totam.
-                              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic perspiciatis quaerat debitis
-                              incidunt officiis explicabo repudiandae et. Quaerat quidem adipisci fugit quam eveniet
-                              illum, ab at voluptatibus aperiam voluptas placeat!
-                              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos nostrum recusandae facere
-                              neque officiis fugiat exercitationem aliquam asperiores expedita, deleniti dolor excepturi,
-                              a est quisquam minima corporis provident. Ea, tempora.
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptates adipisci eius ea
-                              similique impedit deleniti ab sunt fugit quaerat dicta, facere illo doloribus minus numquam
-                              error fuga pariatur voluptatem.
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus animi delectus ad
-                              molestiae itaque exercitationem tenetur id nesciunt, repellat, possimus consequuntur, aut
-                              mollitia temporibus tempore facere maiores esse error sequi!
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor perferendis quisquam
-                              assumenda corporis! Ratione quaerat, quod similique excepturi officiis illo in repellat
-                              exercitationem sapiente blanditiis! Asperiores veniam debitis aspernatur? Assumenda.
-                            </p>
-                          </div>
-                          <div class="modal-footer">
-                            <hr>
-                            <input id="inputelement" class="btn btn-lg btn-primary text-white submit" type="submit" value="Acconsento" disabled>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  <input form="cz_embed_form" id="inputelement" class="btn btn-lg btn-primary text-white submit" type="submit" value="Abbonati a Talia" disabled>
 
-
-
+                  
 
                 </div>
               </form>
+              
+              <div class="modal fade" id="signupconditions" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="pull-left modal-title">Termini, condizioni e privacy</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <div class="modal-body">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero temporibus harum odit fuga
+                          aspernatur nam ad, assumenda animi dolor nulla, id culpa quod tenetur, amet provident!
+                          Deleniti rem veniam totam.
+                          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic perspiciatis quaerat debitis
+                          incidunt officiis explicabo repudiandae et. Quaerat quidem adipisci fugit quam eveniet
+                          illum, ab at voluptatibus aperiam voluptas placeat!
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos nostrum recusandae facere
+                          neque officiis fugiat exercitationem aliquam asperiores expedita, deleniti dolor excepturi,
+                          a est quisquam minima corporis provident. Ea, tempora.
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptates adipisci eius ea
+                          similique impedit deleniti ab sunt fugit quaerat dicta, facere illo doloribus minus numquam
+                          error fuga pariatur voluptatem.
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus animi delectus ad
+                          molestiae itaque exercitationem tenetur id nesciunt, repellat, possimus consequuntur, aut
+                          mollitia temporibus tempore facere maiores esse error sequi!
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor perferendis quisquam
+                          assumenda corporis! Ratione quaerat, quod similique excepturi officiis illo in repellat
+                          exercitationem sapiente blanditiis! Asperiores veniam debitis aspernatur? Assumenda.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              
+
 
               <aside class="cz-field-group form-group mt-4">Tutti i pagamenti vengono elaborati in modo sicuro da <a
                   href="https://stripe.com/it">Stripe</a>.</aside>
@@ -288,6 +293,10 @@
               };
 
               $(document).ready(function () {
+
+                // if(!$('body').change().hasClass("modal-open")){
+                //   $("#inputelement").prop("disabled", true);
+                // }
 
                 console.log('embed-billing.js loaded');
 
