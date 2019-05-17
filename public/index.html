@@ -7,16 +7,18 @@
 <!--<![endif]-->
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139118200-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139118200-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-139118200-1');
-</script>
-<script src="https://js.chargebee.com/v2/chargebee.js" data-cb-site="progettotalia" ></script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-139118200-1');
+  </script>
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,6 +29,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/main.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <script src="https://js.chargebee.com/v2/chargebee.js" data-cb-site="progettotalia"></script>
+
 </head>
 
 <body>
@@ -54,7 +58,7 @@
               <a href="#about" class="nav-link">About</a>
             </li>
             <li>
-              <a href="#purchase" class="nav-link">Partecipa</a>
+              <a href="#partecipa" class="nav-link">Partecipa</a>
             </li>
             <li>
               <a href="#faq" class="nav-link">FAQ</a>
@@ -74,7 +78,7 @@
             <a href="#about" class="nav-link text-white">About</a>
           </li>
           <li>
-            <a href="#purchase" class="nav-link text-white">Partecipa</a>
+            <a href="#partecipa" class="nav-link text-white">Partecipa</a>
           </li>
           <li>
             <a href="#faq" class="nav-link text-white">FAQ</a>
@@ -97,7 +101,7 @@
         <div class="col-8 col-md-5">
           <p class="mt-3">Il “Progetto Talia” è rivolto a chi vuole crescere come individuo e ottenere un approccio
             maturo, consapevole e di successo.</p>
-            <a style="text-decoration: none;" class="btn btn-lg btn-secondary text-white" href="javascript:void(0)" data-cb-type="checkout" data-cb-plan-id="talia" >Abbonati a Talia</a>
+          <a style="text-decoration: none;" class="btn btn-lg btn-secondary text-white" href="#partecipa">Partecipa</a>
         </div>
       </div>
     </div>
@@ -165,7 +169,7 @@
               <button type="button" class="mt-auto btn w-150 btn-lg btn-primary text-white mx-auto d-block mt-3"
                 data-toggle="modal" data-target="#testimonianza">Esempio</button>
             </div>
-            
+
 
           </div>
 
@@ -186,7 +190,16 @@
                       Non avere paura di fare ogni giorno la tua brutta figura
                     </h5>
                     <img class="img-fluid mt-3 mb-3" src="img/news_motivazionale.jpg" alt="">
-                    La paura di fare una brutta figura spesso ci blocca. La paura di non saper parlare bene in pubblico ci allontana dal parlare in pubblico. La paura di essere rifiutati ci allontana dal parlare con la persona che ci piace. Insomma, la paura di non essere all'altezza di una determinata azione ci spinge a non volerla fare. La nostra mente pensa di auto-proteggerci dal malessere causato da un brutta figura evitando di farla. Questo è però un ragionamento elementare e controproducente. In realtà basti pensare che le persone di successo non sono altro che una grande addizione di brutte figure e fallimenti pregressi. Per fare una buona partenza nel nuoto da adolescente ho dovuto dare innumerevoli "panciate" da piccolo. Per arrivare a parlare bene in pubblico ho dovuto vergognarmi diverse volte per aver dimenticato le parole, sbagliato un verbo o aver perso il filo del discorso. Una brutta figura oggi, è una bella figura domani.
+                    La paura di fare una brutta figura spesso ci blocca. La paura di non saper parlare bene in pubblico
+                    ci allontana dal parlare in pubblico. La paura di essere rifiutati ci allontana dal parlare con la
+                    persona che ci piace. Insomma, la paura di non essere all'altezza di una determinata azione ci
+                    spinge a non volerla fare. La nostra mente pensa di auto-proteggerci dal malessere causato da un
+                    brutta figura evitando di farla. Questo è però un ragionamento elementare e controproducente. In
+                    realtà basti pensare che le persone di successo non sono altro che una grande addizione di brutte
+                    figure e fallimenti pregressi. Per fare una buona partenza nel nuoto da adolescente ho dovuto dare
+                    innumerevoli "panciate" da piccolo. Per arrivare a parlare bene in pubblico ho dovuto vergognarmi
+                    diverse volte per aver dimenticato le parole, sbagliato un verbo o aver perso il filo del discorso.
+                    Una brutta figura oggi, è una bella figura domani.
 
                   </p>
                 </div>
@@ -206,15 +219,51 @@
                   <img class="img-fluid" src="img/news-header.png" alt="">
                   <hr>
                   <p>
-                    A tutte le persone di successo intervistate (Manager, Professionisti, Sportivi, Cantanti, ecc...) verranno fatte sempre le stesse seguenti domande:
-                    <ol type="a">
-                      <li>Qual è il tuo sogno?</li>
-                      <li>Cosa ti sta sussurrando il cuore?</li>
-                      <li>Di cosa hai paura?</li>
-                      <li>Cosa ti da energia?</li>
-                      <li>Cosa diresti a te stesso bambino?</li>
-                    </ol> 
+                    <img class="img-fluid mt-3 mb-3" src="img/news_testimonianza.jpg" alt="">
+                    <b>Matteo Achilli</b> (7 Febbraio, 1992) è un imprenditore italiano. Dopo un trascorso da nuotatore,
+                    in cui si è affermato anche campione italiano di categoria, nel 2012 fonda la società Egomnia
+                    S.r.l., proprietaria del portale d’incontro domanda-offerta di lavoro <a href="http://egomnia.com"
+                      target="_blank">egomnia.com</a>. La realtà ha ottenuto un grande interesse di pubblico e
+                    mediatico. Nel 2012 Panorama Economy gli dedica la copertina soprannominandolo “The Italian
+                    Zuckerberg”, nel 2014 la BBC lo inserisce tra i possibili miliardari del futuro e nel 2015 Business
+                    Insider lo nomina il terzo under 30 più potente del mondo. Nel 2017 RAI Cinema produce il film “The
+                    Startup - Accendi il tuo futuro” che racconta la sua storia. In questo periodo Matteo è stato
+                    relatore a diversi eventi in giro per il mondo, compreso il World Economic Forum, e ha ottenuto
+                    diversi riconoscimenti, tra cui la medaglia della Presidenza della Repubblica. Nel 2018 Egomnia
+                    S.r.l. si è consolidata come azienda, superando per la prima volta un milione di euro di fatturato.
                   </p>
+                  <p>
+                    <i>• Qual è il tuo sogno?</i>
+                  </p>
+                  <p>
+                    <b>Fare qualcosa di grande e di buono per essere ricordato</b>
+                  </p>
+                  <p>
+                    <i>• Di cosa hai paura?</i>
+                  </p>
+                  <p>
+                    <b>Di non farcela a realizzare il mio sogno</b>
+                  </p>
+                  <p>
+                    <i>• Cosa ti sta sussurrando il cuore?</i>
+                  </p>
+                  <p>
+                    <b>A volte l'ambizione ti rende infelice perché ti mantiene perennemente insoddisfatto. Inoltre il
+                      prezzo da pagare quando si ha successo è spesso molto alto, riduce il tempo che dedichi alle
+                      persone che ti vogliono bene e aumentano i nemici. Quindi il cuore mi sussurra spesso: “Matteo, ma
+                      ne vale la pena?”.
+                    </b>
+                  </p>
+                  <p>
+                    <i>• Cosa ti da energia?</i>
+                  </p>
+                  <p>
+                    <b>La mia ambizione e la consapevolezza di non avere un piano B.</b>
+                  </p>
+                  <p>
+                    <i>• Cosa diresti a te stesso bambino?</i>
+                  </p>
+                  <p>Probabilmente nulla</p>
                 </div>
               </div>
             </div>
@@ -233,10 +282,16 @@
                   <hr>
                   <p>
                     <h5>
-                      Questo mese vi consiglio il libro "La Bussola del Successo: Le regole per essere vincenti rimanendo Liberi" di Paolo Gallo. Edito da Rizzoli ETAS del 2016.
+                      Questo mese vi consiglio il libro "La Bussola del Successo: Le regole per essere vincenti
+                      rimanendo Liberi" di Paolo Gallo. Edito da Rizzoli ETAS del 2016.
                     </h5>
                     <img class="img-fluid mt-3 mb-3" src="img/news_libro.png" alt="">
-                    La Bussola del Successo è un libro scritto dall'ex Responsabile delle Risorse Umane della Banca Mondiale. Un libro che, attraverso le sue esperienze lavorative in oltre 30 Paesi, racconta come scegliere un'azienda per cui lavorare, presentarsi bene ad un colloquio di lavoro, riconoscere le persone di valore intorno a te, valorizzare le tue caratteristiche, avere carriera e mantenere salda la propria morale. Un libro trasversale ed estremamente utile per chi sta terminando il liceo, è all'università oppure vuole capire e migliorare la propria situazione lavorativa.
+                    La Bussola del Successo è un libro scritto dall'ex Responsabile delle Risorse Umane della Banca
+                    Mondiale. Un libro che, attraverso le sue esperienze lavorative in oltre 30 Paesi, racconta come
+                    scegliere un'azienda per cui lavorare, presentarsi bene ad un colloquio di lavoro, riconoscere le
+                    persone di valore intorno a te, valorizzare le tue caratteristiche, avere carriera e mantenere salda
+                    la propria morale. Un libro trasversale ed estremamente utile per chi sta terminando il liceo, è
+                    all'università oppure vuole capire e migliorare la propria situazione lavorativa.
                   </p>
                 </div>
               </div>
@@ -254,11 +309,22 @@
                 <div class="modal-body">
                   <img class="img-fluid" src="img/news-header.png" alt="">
                   <hr>
-                  <h5>Quando arrivate in ritardo non dite mai il motivo del vostro ritardo, dite semplicemente "Scusate il ritardo"
+                  <h5>Quando arrivate in ritardo non dite mai il motivo del vostro ritardo, dite semplicemente "Scusate
+                    il ritardo"
                   </h5>
                   <img class="img-fluid mt-3 mb-3" src="img/news_consiglio.jpg" alt="">
                   <p>
-                    Può succedere a tutti di arrivare in ritardo. Quante volte ci siamo giustificati con frasi del tipo "Non mi è suonata la sveglia" o "Ero bloccato nel traffico". Frasi che riteniamo d'aiuto a giustificare il nostro ritardo, ma che non lo sono. Infatti qualsiasi giustificazione noi diamo, andiamo a sminuire noi stessi oppure la persona con cui avevamo appuntamento.Se ad esempio dicessimo "Ero bloccato nel traffico" diamo l'impressione di non essere in grado di organizzare il nostro tempo per arrivare in orario. Se ad esempio dicessimo "L'incontro che avevo prima è durato più del previsto" diamo l'impressione che la persona con cui avevamo l'incontro precedente fosse più importante della persona per la quale siamo arrivati in ritardo. Quando invece diciamo "Scusa/Scusate per il ritardo" non diamo modo all'altra persona di avere alcun tipo di informazione e, anche se arrivare il ritardo non è visto di buon occhio, almeno non avete sminuito né voi stessi e né la persona con cui avevate appuntamento.
+                    Può succedere a tutti di arrivare in ritardo. Quante volte ci siamo giustificati con frasi del tipo
+                    "Non mi è suonata la sveglia" o "Ero bloccato nel traffico". Frasi che riteniamo d'aiuto a
+                    giustificare il nostro ritardo, ma che non lo sono. Infatti qualsiasi giustificazione noi diamo,
+                    andiamo a sminuire noi stessi oppure la persona con cui avevamo appuntamento.Se ad esempio dicessimo
+                    "Ero bloccato nel traffico" diamo l'impressione di non essere in grado di organizzare il nostro
+                    tempo per arrivare in orario. Se ad esempio dicessimo "L'incontro che avevo prima è durato più del
+                    previsto" diamo l'impressione che la persona con cui avevamo l'incontro precedente fosse più
+                    importante della persona per la quale siamo arrivati in ritardo. Quando invece diciamo
+                    "Scusa/Scusate per il ritardo" non diamo modo all'altra persona di avere alcun tipo di informazione
+                    e, anche se arrivare il ritardo non è visto di buon occhio, almeno non avete sminuito né voi stessi
+                    e né la persona con cui avevate appuntamento.
                   </p>
                 </div>
               </div>
@@ -272,7 +338,7 @@
               questa community guardandoci negli occhi.</p>
           </div>
         </div>
-        <div id="purchase" class="mt-5 mb-5">
+        <div id="partecipa" class="mt-5 mb-5">
           <div class="row">
             <div class="col-lg-12">
               <h2 class="text-center text-darkgrey">Un investimento che fai su te stesso.</h2>
@@ -318,8 +384,9 @@
           </div>
           <div class="row mt-5">
             <div class="col-md-4 offset-md-4">
-              <a href="javascript:void(0)" style="text-decoration:none; color: white;"><button type="button"
-                  class="btn btn-lg btn-primary text-white mx-auto d-block">Abbonati a Talia</button></a>
+              <a style="text-decoration: none; text-align: center;" href="javascript:void(0)" data-cb-type="checkout"
+                data-cb-plan-id="talia"><button class="btn btn-lg btn-primary text-white mx-auto d-block">Abbonati a
+                  Talia</button></a>
             </div>
           </div>
         </div>
@@ -345,15 +412,18 @@
               Ti abboni e ricevi una mail a settimana. Ogni lunedì.</p>
             <p><b>Quando parte il servizio?</b><br>
               Dal primo lunedì successivo all’avvenuto abbonamento.</p>
-            <p>Come posso abbonarmi?
-                Una volta inserito il tuo indirizzo email, nome, cognome e carta di credito riceverai un'email con la conferma d'iscrizione.
+            <p><b>Come posso abbonarmi?</b><br>
+              Una volta inserito il tuo indirizzo email, nome, cognome e carta di credito riceverai un'email con la
+              conferma d'iscrizione.
             </p>
             <p><b>E se volessi cancellarmi?</b><br>
-              Puoi cancellarti in qualsiasi momento a questo <a href="https://progettotalia.chargebeeportal.com">link</a>, inserendo l'email che hai usato al momento del pagamento.
+              Puoi cancellarti in qualsiasi momento a questo <a href="https://progettotalia.chargebeeportal.com"
+                target="_blank">link</a>, inserendo l'email che hai usato al momento dell'adesione.
             </p>
-              <p><b>È possibile ricevere fattura?</b><br>
-              Certo, richiedi la fattura scrivendo a fatture@progettotalia.it o effettua il login, inserendo l'email che hai usato al momento del pagamento a questo <a href="https://progettotalia.chargebeeportal.com">link</a> e potrai vedere lo storico di fatturazione.
-              </p>
+            <p><b>È possibile ricevere fattura?</b><br>
+              Effettua il login a questo <a href="https://progettotalia.chargebeeportal.com" target="_blank">link</a>,
+              inserendo l'email che hai utilizzato al momento dell'adesione, per vedere lo storico di fatturazione.
+            </p>
             <p><b>Per contattarvi?</b><br>
               Scrivi a <a href="mailto:info@progettotalia.it">info@progettotalia.it</a></p>
           </div>
@@ -373,7 +443,8 @@
           <div class="textwidget">
             <div class="site-info">
               <p>Copyright © Egomnia S.r.l. Via degli Olmetti 5/b, 00060 Formello (RM) – 2019 All Rights Reserved. <a
-                href="termini.html">Termini e Condizioni d’uso</a> – <a href="privacy.html">Privacy</a> - <a href="cookies.html">Cookies</a></p>
+                  href="termini.html">Termini e Condizioni d’uso</a> – <a href="privacy.html">Privacy</a> - <a
+                  href="cookies.html">Cookies</a></p>
             </div>
           </div>
         </div><!-- .footer-widget -->
